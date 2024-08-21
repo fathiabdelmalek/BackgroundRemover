@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3.9
 COPY u2net.onnx /home/.u2net/u2net.onnx
 WORKDIR /app
 COPY . .
