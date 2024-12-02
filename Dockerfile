@@ -1,6 +1,6 @@
-FROM python:3.9-slim
-COPY u2net.onnx /home/.u2net/u2net.onnx
-WORKDIR /user/src/app
+FROM python:3.12-slim
+# COPY u2net.onnx /home/.u2net/u2net.onnx
+WORKDIR /usr/src/app
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 COPY requirements.txt .
